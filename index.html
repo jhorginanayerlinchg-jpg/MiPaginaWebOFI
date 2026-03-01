@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Perfil Personal - Jhorgina</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #fce7f3, #d1fae5);
+}
+
+/* Animación */
+@keyframes aparecer{
+    from{ opacity:0; transform:translateY(20px); }
+    to{ opacity:1; transform:translateY(0); }
+}
+
+.contenedor{
+    max-width:1000px;
+    margin:40px auto;
+    padding:20px;
+    animation:aparecer 1s ease;
+}
+
+/* HEADER */
+.header{
+    background:linear-gradient(135deg,#fbcfe8,#a7f3d0);
+    padding:35px;
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    gap:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    position:relative;
+}
+
+/* circulitos decorativos */
+.header::before{
+    content:"";
+    position:absolute;
+    width:120px;
+    height:120px;
+    background:#ffffff60;
+    border-radius:50%;
+    top:-30px;
+    right:-30px;
+}
+
+.header img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+    transition:0.4s;
+}
+
+.header img:hover{
+    transform:scale(1.1) rotate(4deg);
+}
+
+.nombre{
+    font-size:36px;
+    font-weight:bold;
+    color:#374151;
+}
+
+.telefono-header{
+    margin-top:6px;
+    color:#db2777;
+    font-weight:600;
+}
+
+.genero{
+    display:inline-block;
+    margin-top:8px;
+    padding:6px 15px;
+    background:#f9a8d4;
+    border-radius:25px;
+    font-size:14px;
+    color:white;
+}
+
+.ubicacion{
+    margin-top:8px;
+    color:#374151;
+}
+
+/* GRID */
+.grid{
+    margin-top:35px;
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 8px 18px rgba(0,0,0,0.08);
+    border-left:6px solid #a7f3d0;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card h3{
+    font-size:16px;
+    margin-bottom:10px;
+    color:#db2777;
+}
+
+.card p{
+    margin:0;
+    color:#374151;
+}
+
+.grande{ grid-column: span 3; }
+.mediana{ grid-column: span 2; }
+.pequena{ grid-column: span 1; }
+
+/* MOTIVACIÓN */
+.motivacion{
+    margin-top:45px;
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    border-top:8px solid #f9a8d4;
+}
+
+.motivacion h2{
+    font-size:26px;
+    color:#db2777;
+}
+
+.motivacion p{
+    color:#374151;
+    line-height:1.8;
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    margin-top:35px;
+    color:#6b7280;
+    font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<div class="header">
+    <img src="foto.jpg" alt="Mi Foto">
+    <div>
+        <div class="nombre">Jhorgina Nayerlin Chavarría García</div>
+        <div class="telefono-header">📱 63354242</div>
+        <div class="genero">💗 Femenino</div>
+        <div class="ubicacion">📍 Sucre - Bolivia</div>
+    </div>
+</div>
+
+<div class="grid">
+
+    <div class="card grande">
+        <h3>📍 Lugar de Nacimiento</h3>
+        <p>Sucre, Provincia Oropeza - Bolivia</p>
+    </div>
+
+    <div class="card mediana">
+        <h3>🏠 Dirección Actual</h3>
+        <p>Ricardo Andrade N°215, Sucre</p>
+    </div>
+
+    <div class="card pequena">
+        <h3>📞 Contacto</h3>
+        <p>63354242</p>
+    </div>
+
+    <div class="card mediana">
+        <h3>🌎 Idiomas</h3>
+        <p>Español: básico<br>Inglés: básico</p>
+    </div>
+
+    <div class="card grande">
+        <h3>🏆 Logros</h3>
+        <p>Ingreso libre en las Olimpiadas del Saber. Participación en voluntariado.</p>
+    </div>
+
+    <div class="card mediana">
+        <h3>📘 Estudios Primarios</h3>
+        <p>Unidad Educativa Benjamín Guzmán</p>
+    </div>
+
+    <div class="card mediana">
+        <h3>🎓 Estudios Secundarios</h3>
+        <p>Unidad Educativa María Josefa Mujía</p>
+    </div>
+
+    <div class="card mediana">
+        <h3>👩‍🏫 Tutor</h3>
+        <p>Nancy Betty García Calle</p>
+    </div>
+
+</div>
+
+<div class="motivacion">
+<h2>💻 Mi Motivación</h2>
+
+<p>
+Desde que era más pequeña siempre observé con admiración el esfuerzo y la dedicación de mi hermana en su carrera. Verla estudiar, prepararse y hablar con tanta pasión sobre lo que aprendía despertó en mí una curiosidad que poco a poco se fue transformando en un verdadero interés. Al principio solo era admiración, pero con el tiempo comprendí que yo también quería sentir esa emoción de superación y crecimiento personal que ella demostraba cada día.
+</p>
+
+<p>
+Elegir esta carrera no fue una decisión tomada de un momento a otro, sino el resultado de reflexionar sobre mis metas y mis sueños. Me di cuenta de que quiero construir un futuro estable, pero no solamente por lo económico, sino también por la satisfacción de lograr algo por mí misma. Quiero demostrarme que soy capaz de enfrentar retos, de aprender cosas nuevas y de salir adelante incluso cuando el camino se torne difícil.
+</p>
+
+<p>
+Mi motivación principal es superarme, crecer como persona y como profesional. Deseo adquirir conocimientos que me permitan aportar algo positivo a la sociedad y sentir orgullo de lo que hago. También quiero ser un ejemplo para mi familia, así como mi hermana lo fue para mí, demostrando que con esfuerzo y constancia se pueden alcanzar metas importantes.
+</p>
+
+<p>
+Estudiar esta carrera significa para mí una oportunidad de cambio, de evolución y de construir el futuro que deseo. No se trata solo de obtener un título, sino de aprender, madurar y prepararme para la vida. Sé que habrá dificultades, pero tengo la determinación de seguir adelante y dar lo mejor de mí en cada etapa de este proceso.
+</p>
+
+<p>
+Además, cada día que avanzo en mis estudios confirmo que tomé una decisión importante para mi vida. Aunque existan momentos de duda o cansancio, recuerdo las razones que me impulsaron a comenzar y eso me da fuerzas para continuar. Aspiro a convertirme en una profesional capaz, responsable y comprometida con lo que hace.
+</p>
+
+<p>
+Para mí, esta carrera no es solo una meta académica, sino un proyecto de vida. Representa el deseo de crecer, de demostrar que puedo alcanzar mis sueños y de construir un futuro lleno de oportunidades. Estoy dispuesta a seguir aprendiendo, esforzándome y dando lo mejor de mí en cada paso que dé.
+</p>
+
+</div>
+
+<div class="footer">
+    ✨ Página web personal - 2026 ✨
+</div>
+
+</div>
+
+</body>
+</html>
